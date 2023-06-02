@@ -1,11 +1,15 @@
 import './Login.css'
+import Logo from '../../assets/bonumLogo.svg'
 
 const Login = () => {
 
   return (
     <main id='Login'>
-      <form className="form-container">
-        <p className="title">Iniciar seción</p>
+      <section className="form-container">
+        <article className='head'>
+          <img src={Logo} alt="" />
+          <p className="title">Iniciar seción</p>
+        </article>
         <form className="form">
           <div className="input-group">
             <label >Nombre de usuario</label>
@@ -25,7 +29,7 @@ const Login = () => {
         <p className="signup">
           <a rel="noopener noreferrer" href="#" className="">Registrarse</a>
         </p>
-      </form>
+      </section>
     </main>
   );
 }
