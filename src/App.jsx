@@ -1,12 +1,12 @@
 import './App.css'
-import Begin from './view/Begin'
+import RouterApp from './router/RouterApp'
 
 function App() {
 
   return (
-    <>
-      <Begin />
-    </>
+    <div className="App">
+      <RouterApp />
+    </div>
   )
 }
 

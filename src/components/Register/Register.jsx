@@ -1,19 +1,15 @@
-//Import Routes
-import { Link } from 'react-router-dom'
-// Import style file
-import './Login.css'
+import './Register.css'
 // Import images
 import Logo from '../../assets/bonumLogo.svg'
-import Call from '../../assets/call.png'
+import Join from '../../assets/join.png'
 
-const Login = () => {
-
+const Register = () => {
   return (
-    <main id='Login'>
+    <main id='Register'>
       <section className="form-container">
         <article className='head'>
           <img src={Logo} alt="" />
-          <p className="title">Iniciar seción</p>
+          <p className="title">Registro</p>
         </article>
         <form className="form">
           <div className="input-group">
@@ -21,25 +17,21 @@ const Login = () => {
             <input type="text" name="username" id="username" placeholder="" />
           </div>
           <div className="input-group">
+            <label >Correo</label>
+            <input type="text" name="email" id="email" placeholder="" />
+          </div>
+          <div className="input-group">
             <label >Contraseña</label>
             <input type="password" name="password" id="password" placeholder="" />
           </div>
-          <button className="sign">Ingresar</button>
+          <button className="sign">Registrarse</button>
         </form>
-        <div className="sing-up-menssage">
-          <div className="line"></div>
-          <p className="message">¿No tienes cuenta?</p>
-          <div className="line"></div>
-        </div>
-        <p className="signup">
-          <Link to={'/Register'} >Registrarse</Link>
-        </p>
       </section>
       <section >
-        <img className='call' src={Call} alt="" />
+        <img className='join' src={Join} alt="" />
       </section>
     </main>
   );
 }
 
-export default Login;
+export default Register;
