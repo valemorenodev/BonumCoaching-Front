@@ -2,6 +2,8 @@ import './Register.css'
 // Import images
 import Logo from '../../assets/bonumLogo.svg'
 import Join from '../../assets/join.png'
+//Import Lik
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -25,6 +27,9 @@ const Register = () => {
             <input type="password" name="password" id="password" placeholder="" />
           </div>
           <button className="sign">Registrarse</button>
+          <p className="signup">
+            <Link to={'/CoachPanel'} >Ver panel</Link>
+          </p>
         </form>
       </section>
       <section >
